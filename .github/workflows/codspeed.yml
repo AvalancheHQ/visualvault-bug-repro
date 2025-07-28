@@ -50,3 +50,4 @@ jobs:
         with:
           run: cargo codspeed run
           upload-url: https://api.staging.preview.codspeed.io/upload
+          runner-version: 3.6.1
