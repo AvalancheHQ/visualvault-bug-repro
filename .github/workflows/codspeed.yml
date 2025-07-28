@@ -40,6 +40,11 @@ jobs:
       - name: Build the benchmark target(s)
         run: cargo codspeed build
 
+      - name: "Debugging"
+        run: |
+          cargo version
+          echo $RUSTFLAGS
+
       - name: Run the benchmarks
         uses: CodSpeedHQ/action@v3
         with:
